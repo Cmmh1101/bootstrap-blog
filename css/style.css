@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+:root {
+  --dark-gray: #1d1d1d;
+  --light-blue: #b9faf7;
+  --light-yellow: #f8e4ab;
+  --light-gray: #b5b5b5;
+  --cta-blue: #6497f5;
+  --cta-light: #a0bef5;
+  --teal: #008080;
+}
