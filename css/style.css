@@ -39,7 +39,7 @@ html {
 }
 
 .service-img {
-  width: 200px;
+  width: 150px;
 }
 
 /* Projects */
@@ -50,7 +50,7 @@ html {
 
 .tech-icon {
   position: absolute;
-  bottom: 148px;
+  bottom: 172px;
   right: 0;
 }
 
