@@ -17,3 +17,17 @@ html {
   --cta-light: #a0bef5;
   --teal: #008080;
 }
+
+.project-img {
+  position: relative;
+}
+
+.tech-icon {
+  position: absolute;
+  bottom: 85px;
+  right: 0;
+}
+
+.tech-icon img {
+  width: 80px;
+}

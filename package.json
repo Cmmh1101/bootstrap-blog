@@ -10,8 +10,7 @@
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
     "imagemin": "imagemin img/* -o dist/img",
     "clean": "rimraf dist",
-    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin introhtml.html -d dist --htmlmin -o dist/introhtml.html && usemin html.html -d dist --htmlmin -o dist/html.html && usemin practica.html -d dist --htmlmin -o dist/practica.html",
-    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html"
   },
   "author": "Carla Montano",
   "license": "ISC",
@@ -24,6 +23,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.5.2",
+    "bootswatch": "^5.0.1",
     "font-awesome": "^4.7.0",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1"
