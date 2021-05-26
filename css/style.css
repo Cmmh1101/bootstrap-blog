@@ -18,16 +18,70 @@ html {
   --teal: #008080;
 }
 
+/* Jumbo Hero */
+
+.jumbo-hero {
+  height: 100vh;
+  position: relative;
+}
+
+.navigation {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Services */
+
+.service-box {
+  box-shadow: none;
+}
+
+.service-img {
+  width: 200px;
+}
+
+/* Projects */
+
 .project-img {
   position: relative;
 }
 
 .tech-icon {
   position: absolute;
-  bottom: 85px;
+  bottom: 148px;
   right: 0;
 }
 
 .tech-icon img {
   width: 80px;
+}
+
+.project-btn-mouse {
+  transform: rotate(-30deg);
+}
+
+/* Article */
+
+.box-border-left {
+  border: none;
+  border-left: 5px solid var(--dark-gray);
+}
+.box-border-right {
+  border: none;
+  border-right: 5px solid;
+}
+
+.article-img {
+  width: 250px;
+}
+.article-img img {
+  width: 100%;
+}
+
+/* Footer */
+
+.connect-icons a i {
+  font-size: 2.5rem;
 }

@@ -34,7 +34,9 @@
   </head>
   <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top navigation"
+    >
       <div class="container">
         <a class="navbar-brand" href="#">Blog</a>
         <button
@@ -79,22 +81,26 @@
     <!-- End of navigation -->
 
     <!-- Jumbo Hero -->
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4">Fluid jumbotron</h1>
-        <p class="lead">
-          This is a modified jumbotron that occupies the entire horizontal space
-          of its parent.
-        </p>
+    <header class="jumbotron jumbo-hero">
+      <div
+        class="container py-5 d-flex justify-content-center align-items-center"
+      >
+        <div class="my-5">
+          <h1 class="display-4 mt-5">Fluid jumbotron</h1>
+          <p class="lead">
+            This is a modified jumbotron that occupies the entire horizontal
+            space of its parent.
+          </p>
+        </div>
       </div>
-    </div>
+    </header>
 
     <!-- End of Jumbo hero -->
     <main>
       <div class="container">
-        <div class="row d-flex justify-content-center">
+        <div class="row d-flex justify-content-center my-5">
           <!-- Services -->
-          <div class="col-12 mb-4">
+          <div class="col-12 my-5">
             <h1>Services</h1>
             <p>
               My mission is to help others achieve goals using the skills,
@@ -105,9 +111,13 @@
 
           <!-- Service Box -->
 
-          <div class="col-md-4">
-            <div class="card my-4 my-md-5">
-              <img src="..." class="card-img-top" alt="..." />
+          <div class="col-md-4 service-box">
+            <div class="card my-4 my-md-5 p-3 service-box">
+              <img
+                src="img/responsive.png"
+                class="card-img-top img-fluid service-img mx-auto"
+                alt="..."
+              />
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">
@@ -119,8 +129,12 @@
           </div>
           <!-- Service Box -->
           <div class="col-md-4">
-            <div class="card my-4 my-md-5">
-              <img src="..." class="card-img-top" alt="..." />
+            <div class="card my-4 my-md-5 p-3 service-box">
+              <img
+                src="img/mobileapps.png"
+                class="card-img-top img-fluid service-img mx-auto"
+                alt="..."
+              />
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">
@@ -131,9 +145,13 @@
             </div>
           </div>
           <!-- Service Box -->
-          <div class="col-md-4">
-            <div class="card my-4 my-md-5">
-              <img src="..." class="card-img-top" alt="..." />
+          <div class="col-md-4 service-box">
+            <div class="card my-4 my-md-5 p-3 service-box">
+              <img
+                src="img/consultation.png"
+                class="card-img-top service-img mx-auto"
+                alt="..."
+              />
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">
@@ -147,16 +165,12 @@
           <!-- End of services -->
 
           <!-- Projects -->
-          <div class="col-12 my-5">
+          <div class="col-12 mt-5 mb-3">
             <h1>Projects</h1>
-            <p>
-              You have the option to display the projects based on the
-              technologies
-            </p>
           </div>
 
           <!-- Projects Filter -->
-          <div class="col-12 mb-5 d-flex justify-content-center">
+          <div class="col-12 mb-5">
             <ul class="nav">
               <li class="nav-item">
                 <a class="nav-link active" href="#">All</a>
@@ -179,7 +193,7 @@
 
           <!-- Projects cards -->
 
-          <div class="col-10 col-md-5 my-4">
+          <div class="col-10 col-md-6 col-lg-5 m-4">
             <div class="card text-white bg-dark mb-3">
               <div class="card-header project-img">
                 <img
@@ -194,6 +208,13 @@
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
+                <a href="" class="btn btn-outline-primary"
+                  >Explore Project
+                  <i
+                    class="fa fa-mouse-pointer pl-2 project-btn-mouse"
+                    aria-hidden="true"
+                  ></i
+                ></a>
               </div>
               <div class="tech-icon">
                 <img class="" src="/img/physics.png" alt="" />
@@ -203,7 +224,7 @@
 
           <!-- Projects cards -->
 
-          <div class="col-10 col-md-5 my-4">
+          <div class="col-10 col-md-6 col-lg-5 m-4">
             <div class="card text-white bg-dark mb-3">
               <div class="card-header project-img">
                 <img
@@ -218,6 +239,13 @@
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
+                <a href="" class="btn btn-outline-primary"
+                  >Explore Project
+                  <i
+                    class="fa fa-mouse-pointer pl-2 project-btn-mouse"
+                    aria-hidden="true"
+                  ></i
+                ></a>
               </div>
               <div class="tech-icon">
                 <img class="" src="/img/physics.png" alt="" />
@@ -227,7 +255,7 @@
 
           <!-- Projects cards -->
 
-          <div class="col-10 col-md-5 my-4">
+          <div class="col-10 col-md-6 col-lg-5 m-4">
             <div class="card text-white bg-dark mb-3">
               <div class="card-header project-img">
                 <img
@@ -242,6 +270,13 @@
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
+                <a href="" class="btn btn-outline-primary"
+                  >Explore Project
+                  <i
+                    class="fa fa-mouse-pointer pl-2 project-btn-mouse"
+                    aria-hidden="true"
+                  ></i
+                ></a>
               </div>
               <div class="tech-icon">
                 <img class="" src="/img/physics.png" alt="" />
@@ -251,7 +286,7 @@
 
           <!-- Projects cards -->
 
-          <div class="col-10 col-md-5 my-4">
+          <div class="col-10 col-md-6 col-lg-5 m-4">
             <div class="card text-white bg-dark mb-3">
               <div class="card-header project-img">
                 <img
@@ -266,6 +301,13 @@
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
+                <a href="" class="btn btn-outline-primary"
+                  >Explore Project
+                  <i
+                    class="fa fa-mouse-pointer pl-2 project-btn-mouse"
+                    aria-hidden="true"
+                  ></i
+                ></a>
               </div>
               <div class="tech-icon">
                 <img class="" src="/img/physics.png" alt="" />
@@ -276,35 +318,100 @@
           <!-- End of projects -->
           <!-- Posts -->
           <div class="col-12 my-5">
-            <h1>Projects</h1>
-            <p>
-              You have the option to display the projects based on the
-              technologies
-            </p>
+            <h1>Latest Stories</h1>
           </div>
 
-          <article class="col-12">
-            <div class="card mb-3">
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img src="..." alt="..." />
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">
-                      This is a wider card with supporting text below as a
-                      natural lead-in to additional content. This content is a
-                      little bit longer.
+          <!-- Articles -->
+          <!-- Single Article Box -->
+          <article class="col-md-12 col-lg-8">
+            <div class="row row-content align-items-center my-3 my-md-5">
+              <div class="col">
+                <div class="media">
+                  <img
+                    src="/img/styding.jpg"
+                    class="
+                      d-flex
+                      ml-3
+                      img-fluid
+                      article-img
+                      box-border-left
+                      border-warning
+                      mr-4
+                    "
+                    alt="Breadcrum Trail Thumbnail"
+                  />
+                  <div class="media-body align-self-center">
+                    <a href=""><h3>Bootcamp Journey: The begining</h3></a>
+                    <span class="text-secondary"
+                      ><time itemprop="datePublished" datetime="2014-07-02"
+                        >May 22nd, 2021</time
+                      ></span
+                    >
+                    <p class="d-none d-sm-block">
+                      Nestled in the foothills of the Chrome Mountains, this
+                      campground on the shores of the pristine React Lake is a
+                      favorite for fly fishers...
                     </p>
-                    <p class="card-text">
-                      <small class="text-muted">Last updated 3 mins ago</small>
-                    </p>
+                    <a href="#"
+                      >Keep Reading<i
+                        class="fa fa-arrow-right pl-2"
+                        aria-hidden="true"
+                      ></i
+                    ></a>
                   </div>
                 </div>
               </div>
             </div>
           </article>
+          <!-- End of Single Article box -->
+          <!-- Single Article Box -->
+          <article class="col-md-12 col-lg-8">
+            <div class="row row-content align-items-center my-3 my-md-5">
+              <div class="col">
+                <div class="media">
+                  <img
+                    src="/img/styding.jpg"
+                    class="
+                      d-flex
+                      ml-3
+                      img-fluid
+                      article-img
+                      box-border-right
+                      border-warning
+                      ml-4
+                      order-12
+                    "
+                    alt="Breadcrum Trail Thumbnail"
+                  />
+                  <div class="media-body align-self-center text-right">
+                    <a href=""><h3>Bootcamp Journey: Week 1</h3></a>
+                    <span class="text-secondary"
+                      ><time itemprop="datePublished" datetime="2014-07-02"
+                        >May 22nd, 2021</time
+                      ></span
+                    >
+                    <p class="d-none d-sm-block">
+                      Nestled in the foothills of the Chrome Mountains, this
+                      campground on the shores of the pristine React Lake is a
+                      favorite for fly fishers...
+                    </p>
+                    <a href="#"
+                      >Keep Reading<i
+                        class="fa fa-arrow-right pl-2"
+                        aria-hidden="true"
+                      ></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <div class="col-12 text-center my-5">
+            <button type="button" class="btn btn-warning">
+              See All Stories
+            </button>
+          </div>
 
           <!-- End of Posts -->
         </div>
@@ -312,7 +419,55 @@
     </main>
 
     <footer class="bg-dark text-white d-flex justify-content-center py-3">
-      Footer section
+      <div class="container">
+        <div class="row mt-3">
+          <div class="col-sm-8 col-md-5 mx-auto">
+            <a href="#"
+              ><img src="img/logobrand.png" alt="" class="img-fluid"
+            /></a>
+          </div>
+        </div>
+        <div class="row my-3 my-md-5">
+          <div class="col-sm-6 col-md-4 d-flex justify-content-center">
+            <nav class="nav flex-column">
+              <a class="nav-link active" href="#">Home</a>
+              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="#">Projects</a>
+            </nav>
+          </div>
+          <div class="col-sm-6 col-md-4 d-flex justify-content-center">
+            <nav class="nav flex-column">
+              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link" href="#">Contact</a>
+            </nav>
+          </div>
+          <div class="col-md-4 text-center">
+            <h5>Let's Connect</h5>
+            <div
+              class="
+                d-flex
+                align-items-center
+                justify-content-center
+                connect-icons
+              "
+            >
+              <a class="nav-link m-2" href="#"
+                ><i class="fa fa-github" aria-hidden="true"></i
+              ></a>
+              <a class="nav-link m-2" href="#"
+                ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+              ></a>
+              <a class="nav-link m-2" href="#"
+                ><i class="fa fa-twitter" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="text-white text-center small">
+          2021 | All Rights Reserved
+        </div>
+      </div>
     </footer>
 
     <!-- End of Footer -->
