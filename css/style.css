@@ -69,6 +69,12 @@ p {
   left: 0;
 }
 
+/* Jumbo Inner Pages */
+
+.jumbo-inner {
+  height: 75vh;
+}
+
 /* Services */
 
 .service-box {
@@ -121,4 +127,18 @@ p {
 
 .connect-icons a i {
   font-size: 2.5rem;
+}
+
+/* Post page */
+
+.post-img {
+  max-height: 500px;
+}
+
+article .tags ul {
+  list-style: none;
+  text-decoration: none;
+}
+article .tags ul li a {
+  text-decoration: none;
 }
