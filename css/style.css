@@ -98,11 +98,31 @@ p {
 }
 
 .tech-icon img {
-  width: 80px;
+  width: 50px;
 }
 
 .project-btn-mouse {
   transform: rotate(-30deg);
+}
+
+/* Skills */
+
+.tech-title {
+  cursor: pointer;
+}
+
+.tech-skills {
+  height: auto;
+  min-height: 50vh;
+}
+
+.skill-div {
+  border-radius: 5px;
+}
+
+.skills-img {
+  width: 100%;
+  height: 50px;
 }
 
 /* Article */
@@ -118,6 +138,7 @@ p {
 
 .article-img {
   width: 250px;
+  height: 250px;
 }
 .article-img img {
   width: 100%;
