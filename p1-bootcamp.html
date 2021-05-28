@@ -30,19 +30,17 @@
       rel="stylesheet"
     />
 
-    <title>Web Development Portfolio</title>
+    <title>Web Development Journey</title>
   </head>
   <body>
     <!-- Navigation -->
-    <nav
-      class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top navigation"
-    >
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <div class="container">
-        <a class="navbar-brand" href="#"
-          ><img class="col-6 col-md-4 img-fluid" src="img/logobrand.png" alt=""
+        <a class="navbar-brand" href="index.html"
+          ><img class="header-logo" src="img/logobrand.png" alt=""
         /></a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler ml-auto"
           type="button"
           data-toggle="collapse"
           data-target="#navbarColor02"
@@ -54,27 +52,21 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarColor02">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-lg-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html"
-                >Home
-                <span class="sr-only">(current)</span>
-              </a>
+              <a class="nav-link" href="index.html">Home </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="projects.html">Projects</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">About</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >Blog
-                <span class="sr-only">(current)</span>
-              </a>
+              <a class="nav-link" href="blog.html">Blog </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
@@ -84,34 +76,6 @@
       </div>
     </nav>
     <!-- End of navigation -->
-
-    <!-- Jumbo Hero -->
-    <!-- <header class="jumbotron jumbo-hero jumbo-inner bg-dark md-bg-none">
-      <div
-        class="
-          container
-          py-5
-          d-flex
-          align-items-center
-          justify-content-center
-          mt-5
-        "
-      >
-        <div class="hero-text">
-          <h1 class="display-4 mt-5 text-white">
-            Latest
-            <span class="text-primary font-weight-bolder"
-              ><strong>Stories</strong></span
-            >
-          </h1>
-        </div>
-      </div>
-      <img
-        src="img/heroimg-border.png"
-        class="img-fluid img-hero d-none d-md-flex"
-        alt=""
-      />
-    </header> -->
 
     <!-- End of Jumbo hero -->
     <main class="container">
@@ -133,12 +97,13 @@
               repudiandae est eius, voluptates provident unde, quis magnam sed
               amet.
             </p>
-
-            <img
-              src="img/styding.jpg"
-              alt=""
-              class="img-fluid w-100 px-0 post-img"
-            />
+            <figure class="full-post-img my-5">
+              <img
+                src="img/web-dev.jpg"
+                alt=""
+                class="img-fluid px-0 post-img"
+              />
+            </figure>
 
             <p class="my-3">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -242,15 +207,15 @@
         <div class="row my-3 my-md-5">
           <div class="col-sm-6 col-md-4 d-flex justify-content-center">
             <nav class="nav flex-column">
-              <a class="nav-link active" href="#">Home</a>
+              <a class="nav-link active" href="index.html">Home</a>
               <a class="nav-link" href="#">Services</a>
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="projects.html">Projects</a>
             </nav>
           </div>
           <div class="col-sm-6 col-md-4 d-flex justify-content-center">
             <nav class="nav flex-column">
               <a class="nav-link" href="#">About</a>
-              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link" href="blog.html">Blog</a>
               <a class="nav-link" href="#">Contact</a>
             </nav>
           </div>

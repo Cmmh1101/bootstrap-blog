@@ -30,13 +30,17 @@
       rel="stylesheet"
     />
 
-    <title>Projects</title>
+    <title>Web Development Portfolio</title>
   </head>
   <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top navigation"
+    >
       <div class="container">
-        <a class="navbar-brand" href="#">Blog</a>
+        <a class="navbar-brand" href="#"
+          ><img class="col-6 col-md-4 img-fluid" src="img/logobrand.png" alt=""
+        /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -50,86 +54,271 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarColor02">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
               <a class="nav-link" href="#"
                 >Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link active" href="#">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input
-              class="form-control mr-sm-2"
-              type="text"
-              placeholder="Search"
-            />
-            <button class="btn btn-secondary my-2 my-sm-0" type="submit">
-              Search
-            </button>
-          </form>
         </div>
       </div>
     </nav>
     <!-- End of navigation -->
 
     <!-- Jumbo Hero -->
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4">Fluid jumbotron</h1>
-        <p class="lead">
-          This is a modified jumbotron that occupies the entire horizontal space
-          of its parent.
-        </p>
+    <header class="jumbotron jumbo-hero bg-dark md-bg-none">
+      <div class="container py-5 d-flex align-items-center mt-5">
+        <div class="hero-text">
+          <h1 class="display-4 mt-5 text-white text-center">
+            Web Development<br />
+            <span class="text-primary font-weight-bolder"
+              ><strong>Projects</strong></span
+            >
+          </h1>
+
+          <a href="#projects" class="btn btn-primary mt-3"
+            ><i class="fa fa-angle-double-down" aria-hidden="true"></i
+          ></a>
+        </div>
       </div>
-    </div>
+      <img
+        src="img/heroimg-border.png"
+        class="img-fluid img-hero d-none d-md-flex"
+        alt=""
+      />
+    </header>
 
     <!-- End of Jumbo hero -->
     <main>
       <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h1>Services</h1>
-            <p>
-              You have the option to display the projects based on the
-              technologies
-            </p>
+        <div class="row d-flex justify-content-center my-5">
+          <!-- Projects -->
+          <div class="col-12 mt-5 mb-3" id="projects">
+            <h1>Projects</h1>
           </div>
-          <div class="col-12">
+
+          <!-- Projects Filter -->
+          <div class="col-12 mb-5">
             <ul class="nav">
               <li class="nav-item">
-                <a class="nav-link active" href="#">All</a>
+                <a class="nav-link active">All</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">Front End</a>
+                <a class="nav-link">Front End</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Mobile Apps</a>
+                <a class="nav-link">Mobile Apps</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Full Stack</a>
+                <a class="nav-link">Full Stack</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">CMS</a>
+                <a class="nav-link">CMS</a>
               </li>
             </ul>
           </div>
-          <div class="col-md-6"></div>
+          <!-- End of Projects Filter -->
+
+          <!-- Projects cards -->
+
+          <div class="col-8 col-md-6 col-lg-4 m-4">
+            <div class="card text-white bg-dark mb-3">
+              <div class="card-header project-img">
+                <img
+                  class="img-fluid"
+                  src="https://cdn.dribbble.com/users/702789/screenshots/14012516/media/561a8b7e8cbe51c72c18f4ef0dc72676.png"
+                  alt=""
+                />
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Dark card title</h4>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-outline-primary"
+                  >Explore Project
+                  <i
+                    class="fa fa-mouse-pointer pl-2 project-btn-mouse"
+                    aria-hidden="true"
+                  ></i
+                ></a>
+              </div>
+              <div class="tech-icon">
+                <img class="" src="/img/physics.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Projects cards -->
+
+          <div class="col-8 col-md-6 col-lg-4 m-4">
+            <div class="card text-white bg-dark mb-3">
+              <div class="card-header project-img">
+                <img
+                  class="img-fluid"
+                  src="https://cdn.dribbble.com/users/702789/screenshots/14012516/media/561a8b7e8cbe51c72c18f4ef0dc72676.png"
+                  alt=""
+                />
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Dark card title</h4>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-outline-primary"
+                  >Explore Project
+                  <i
+                    class="fa fa-mouse-pointer pl-2 project-btn-mouse"
+                    aria-hidden="true"
+                  ></i
+                ></a>
+              </div>
+              <div class="tech-icon">
+                <img class="" src="/img/physics.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Projects cards -->
+
+          <div class="col-8 col-md-6 col-lg-4 m-4">
+            <div class="card text-white bg-dark mb-3">
+              <div class="card-header project-img">
+                <img
+                  class="img-fluid"
+                  src="https://cdn.dribbble.com/users/702789/screenshots/14012516/media/561a8b7e8cbe51c72c18f4ef0dc72676.png"
+                  alt=""
+                />
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Dark card title</h4>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-outline-primary"
+                  >Explore Project
+                  <i
+                    class="fa fa-mouse-pointer pl-2 project-btn-mouse"
+                    aria-hidden="true"
+                  ></i
+                ></a>
+              </div>
+              <div class="tech-icon">
+                <img class="" src="/img/physics.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Projects cards -->
+
+          <div class="col-8 col-md-6 col-lg-4 m-4">
+            <div class="card text-white bg-dark mb-3">
+              <div class="card-header project-img">
+                <img
+                  class="img-fluid"
+                  src="https://cdn.dribbble.com/users/702789/screenshots/14012516/media/561a8b7e8cbe51c72c18f4ef0dc72676.png"
+                  alt=""
+                />
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Dark card title</h4>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-outline-primary"
+                  >Explore Project
+                  <i
+                    class="fa fa-mouse-pointer pl-2 project-btn-mouse"
+                    aria-hidden="true"
+                  ></i
+                ></a>
+              </div>
+              <div class="tech-icon">
+                <img class="" src="/img/physics.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- End of projects -->
         </div>
       </div>
     </main>
+
+    <footer class="bg-dark text-white d-flex justify-content-center py-3">
+      <div class="container">
+        <div class="row mt-3">
+          <div class="col-sm-8 col-md-5 mx-auto">
+            <a href="#"
+              ><img src="img/logobrand.png" alt="" class="img-fluid"
+            /></a>
+          </div>
+        </div>
+        <div class="row my-3 my-md-5">
+          <div class="col-sm-6 col-md-4 d-flex justify-content-center">
+            <nav class="nav flex-column">
+              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="services.html">Services</a>
+              <a class="nav-link active" href="#">Projects</a>
+            </nav>
+          </div>
+          <div class="col-sm-6 col-md-4 d-flex justify-content-center">
+            <nav class="nav flex-column">
+              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="blog.html">Blog</a>
+              <a class="nav-link" href="#">Contact</a>
+            </nav>
+          </div>
+          <div class="col-md-4 text-center">
+            <h5>Let's Connect</h5>
+            <div
+              class="
+                d-flex
+                align-items-center
+                justify-content-center
+                connect-icons
+              "
+            >
+              <a class="nav-link m-2" href="#"
+                ><i class="fa fa-github" aria-hidden="true"></i
+              ></a>
+              <a class="nav-link m-2" href="#"
+                ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+              ></a>
+              <a class="nav-link m-2" href="#"
+                ><i class="fa fa-twitter" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="text-white text-center small">
+          2021 | All Rights Reserved
+        </div>
+      </div>
+    </footer>
 
     <!-- End of Footer -->
     <!-- build:js js/main.js -->

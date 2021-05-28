@@ -5,11 +5,8 @@
   "main": "index.html",
   "scripts": {
     "lite": "lite-server",
-    "scss": "node-sass -o css/ css/",
-    "start": "npm run watch:all",
+    "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch:scss": "onchange 'css/*.scss' -- npm run scss",
-    "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'",
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
     "imagemin": "imagemin img/* -o dist/img",
     "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin blog.html -d dist --htmlmin -o dist/blog.html && usemin p1-bootcamp.html -d dist --htmlmin -o dist/p1-bootcamp.html",
