@@ -159,10 +159,6 @@ p {
 
 /* Post page */
 
-.post-img {
-  max-height: 500px;
-}
-
 article .tags ul {
   list-style: none;
   text-decoration: none;
