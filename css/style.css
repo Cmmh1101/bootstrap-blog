@@ -116,6 +116,11 @@ p {
   cursor: pointer;
 }
 
+.skill-box {
+  max-width: 120px;
+  max-height: 60px;
+}
+
 .tech-skills {
   height: auto;
   min-height: 50vh;
