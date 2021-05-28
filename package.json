@@ -9,7 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
     "imagemin": "imagemin img/* -o dist/img",
-    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin blog.html -d dist --htmlmin -o dist/blog.html && usemin p1-bootcamp.html -d dist --htmlmin -o dist/p1-bootcamp.html && usemin p2-bootcamp.html -d dist --htmlmin -o dist/p2-bootcamp.html && usemin projects.html -d dist --htmlmin -o dist/projects.html",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin blog.html -d dist --htmlmin -o dist/blog.html && usemin p1-bootcamp.html -d dist --htmlmin -o dist/p1-bootcamp.html && usemin p2-bootweek1.html -d dist --htmlmin -o dist/p2-bootweek1.html && usemin projects.html -d dist --htmlmin -o dist/projects.html",
     "clean": "rimraf dist",
     "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
   },
