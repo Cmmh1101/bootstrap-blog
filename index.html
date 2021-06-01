@@ -38,11 +38,11 @@
       class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top navigation"
     >
       <div class="container">
-        <a class="navbar-brand" href="#"
-          ><img class="col-6 col-md-4 img-fluid" src="img/logobrand.png" alt=""
+        <a class="navbar-brand" href="index.html"
+          ><img class="header-logo" src="img/logobrand.png" alt=""
         /></a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler ml-auto"
           type="button"
           data-toggle="collapse"
           data-target="#navbarColor02"
@@ -54,35 +54,31 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarColor02">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-lg-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >Home
-                <span class="sr-only">(current)</span>
-              </a>
+              <a class="nav-link" href="index.html">Home </a>
+              <span class="sr-only">(current)</span>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
+              <a class="nav-link" href="#">Services</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="projects.html">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="blog.html">Blog </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="blog.html">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link" href="#">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+
     <!-- End of navigation -->
 
     <!-- Jumbo Hero -->
@@ -187,11 +183,8 @@
           </div>
 
           <!-- Projects Filter -->
-          <div class="col-12 mb-5">
+          <!-- <div class="col-12 mb-5">
             <ul class="nav">
-              <li class="nav-item">
-                <a class="nav-link active">All</a>
-              </li>
               <li class="nav-item">
                 <a class="nav-link">Front End</a>
               </li>
@@ -204,26 +197,49 @@
               <li class="nav-item">
                 <a class="nav-link">CMS</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link active">All</a>
+              </li>
             </ul>
+          </div> -->
+
+          <!-- filter btns -->
+
+          <div class="btn-group mb-5" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-primary" id="btn-front">
+              Frontend
+            </button>
+            <button type="button" class="btn btn-primary" id="btn-full">
+              Full Stack
+            </button>
+            <button type="button" class="btn btn-primary" id="btn-mobile">
+              Mobile
+            </button>
+            <button type="button" class="btn btn-primary" id="btn-cms">
+              CMS
+            </button>
+            <button type="button" class="btn btn-primary" id="btn-all">
+              All
+            </button>
           </div>
           <!-- End of Projects Filter -->
 
           <!-- Projects cards -->
 
-          <div class="col-8 col-md-6 col-lg-4 m-4">
+          <div class="col-10 col-md-6 col-lg-4 m-4 project_box project_front">
             <div class="card text-white bg-dark mb-3">
               <div class="card-header project-img">
                 <img
                   class="img-fluid"
-                  src="https://cdn.dribbble.com/users/702789/screenshots/14012516/media/561a8b7e8cbe51c72c18f4ef0dc72676.png"
-                  alt=""
+                  src="img/escuelaweb.png"
+                  alt="Website Image"
                 />
               </div>
               <div class="card-body">
-                <h4 class="card-title">Dark card title</h4>
+                <h4 class="card-title">Non-profit Website</h4>
+
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  HTML | CSS | Bootstrap | JavaScript | React <br />
                 </p>
                 <a href="#" class="btn btn-outline-primary"
                   >Explore Project
@@ -233,29 +249,63 @@
                   ></i
                 ></a>
               </div>
-              <div class="tech-icon">
-                <img class="" src="/img/physics.png" alt="" />
+              <div class="tech-icon d-flex flex-column bg-secondary shadow">
+                <img class="p-2" src="/img/cib-html5.svg" alt="" />
+                <img class="p-2" src="/img/cib-css3.svg" alt="" />
+                <img class="p-2" src="/img/cib-bootstrap.svg" alt="" />
+                <img class="p-2" src="/img/cib-js.svg" alt="" />
+                <img class="p-2" src="/img/cib-react.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <!-- Projects cards -->
+
+          <div class="col-10 col-md-6 col-lg-4 m-4 project_box project_front">
+            <div class="card text-white bg-dark mb-3">
+              <div class="card-header project-img">
+                <img
+                  class="img-fluid project-box-img"
+                  src="/img/hopeforthenations.png"
+                  alt="Website display image"
+                />
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Non-profit Website</h4>
+
+                <p class="card-text">
+                  HTML | CSS | Bootstrap | JavaScript <br />
+                </p>
+                <a href="#" class="btn btn-outline-primary"
+                  >Explore Project
+                  <i
+                    class="fa fa-mouse-pointer pl-2 project-btn-mouse"
+                    aria-hidden="true"
+                  ></i
+                ></a>
+              </div>
+              <div class="tech-icon d-flex flex-column bg-secondary shadow">
+                <img class="p-2" src="/img/cib-html5.svg" alt="" />
+                <img class="p-2" src="/img/cib-css3.svg" alt="" />
+                <img class="p-2" src="/img/cib-bootstrap.svg" alt="" />
+                <img class="p-2" src="/img/cib-js.svg" alt="" />
               </div>
             </div>
           </div>
 
           <!-- Projects cards -->
 
-          <div class="col-8 col-md-6 col-lg-4 m-4">
+          <div class="col-10 col-md-6 col-lg-4 m-4 project_box project_front">
             <div class="card text-white bg-dark mb-3">
               <div class="card-header project-img">
                 <img
                   class="img-fluid"
-                  src="https://cdn.dribbble.com/users/702789/screenshots/14012516/media/561a8b7e8cbe51c72c18f4ef0dc72676.png"
-                  alt=""
+                  src="/img/tequedachi.png"
+                  alt="Website display image"
                 />
               </div>
               <div class="card-body">
-                <h4 class="card-title">Dark card title</h4>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
+                <h4 class="card-title">Responsive Business Website</h4>
+                <p class="card-text">HTML | CSS | JavaScript <br /></p>
                 <a href="#" class="btn btn-outline-primary"
                   >Explore Project
                   <i
@@ -264,29 +314,28 @@
                   ></i
                 ></a>
               </div>
-              <div class="tech-icon">
-                <img class="" src="/img/physics.png" alt="" />
+              <div class="tech-icon d-flex flex-column bg-secondary shadow">
+                <img class="p-2" src="/img/cib-html5.svg" alt="" />
+                <img class="p-2" src="/img/cib-css3.svg" alt="" />
+                <img class="p-2" src="/img/cib-js.svg" alt="" />
               </div>
             </div>
           </div>
 
           <!-- Projects cards -->
 
-          <div class="col-8 col-md-6 col-lg-4 m-4">
+          <div class="col-10 col-md-6 col-lg-4 m-4 project_box project_front">
             <div class="card text-white bg-dark mb-3">
               <div class="card-header project-img">
                 <img
                   class="img-fluid"
-                  src="https://cdn.dribbble.com/users/702789/screenshots/14012516/media/561a8b7e8cbe51c72c18f4ef0dc72676.png"
-                  alt=""
+                  src="img/lawyertemplate.png"
+                  alt="Website template image"
                 />
               </div>
               <div class="card-body">
-                <h4 class="card-title">Dark card title</h4>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
+                <h4 class="card-title">Landing Page</h4>
+                <p class="card-text">HTML | CSS | JavaScript | GSAP <br /></p>
                 <a href="#" class="btn btn-outline-primary"
                   >Explore Project
                   <i
@@ -295,29 +344,29 @@
                   ></i
                 ></a>
               </div>
-              <div class="tech-icon">
-                <img class="" src="/img/physics.png" alt="" />
+              <div class="tech-icon d-flex flex-column bg-secondary shadow">
+                <img class="p-2" src="/img/cib-html5.svg" alt="" />
+                <img class="p-2" src="/img/cib-css3.svg" alt="" />
+                <img class="p-2" src="/img/cib-js.svg" alt="" />
+                <img class="p-2" src="/img/cib-greensock 2.svg" alt="" />
               </div>
             </div>
           </div>
 
           <!-- Projects cards -->
 
-          <div class="col-8 col-md-6 col-lg-4 m-4">
+          <div class="col-10 col-md-6 col-lg-4 m-4 project_box project_cms">
             <div class="card text-white bg-dark mb-3">
               <div class="card-header project-img">
                 <img
                   class="img-fluid"
-                  src="https://cdn.dribbble.com/users/702789/screenshots/14012516/media/561a8b7e8cbe51c72c18f4ef0dc72676.png"
-                  alt=""
+                  src="img/servinginchrist.png"
+                  alt="Website Image"
                 />
               </div>
               <div class="card-body">
-                <h4 class="card-title">Dark card title</h4>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
+                <h4 class="card-title">CMS - Website</h4>
+                <p class="card-text">WordPress | Divi Theme<br /></p>
                 <a href="#" class="btn btn-outline-primary"
                   >Explore Project
                   <i
@@ -326,11 +375,42 @@
                   ></i
                 ></a>
               </div>
-              <div class="tech-icon">
-                <img class="" src="/img/physics.png" alt="" />
+              <div class="tech-icon d-flex flex-column bg-secondary shadow">
+                <img class="p-2" src="/img/cib-wordpress 2.svg" alt="" />
               </div>
             </div>
           </div>
+          <!-- Projects cards -->
+
+          <!-- <div class="col-10 col-md-6 col-lg-4 m-4 project_box project_front">
+            <div class="card text-white bg-dark mb-3">
+              <div class="card-header project-img">
+                <img
+                  class="img-fluid"
+                  src="img/escuelaweb.png"
+                  alt="Website Image"
+                />
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">CMS - Website</h4>
+                <p class="card-text">WordPress | Divi Theme<br /></p>
+                <a href="#" class="btn btn-outline-primary"
+                  >Explore Project
+                  <i
+                    class="fa fa-mouse-pointer pl-2 project-btn-mouse"
+                    aria-hidden="true"
+                  ></i
+                ></a>
+              </div>
+              <div class="tech-icon d-flex flex-column bg-secondary shadow">
+                <img class="p-2" src="/img/cib-js.svg" alt="" />
+                <img class="p-2" src="/img/cib-react.svg" alt="" />
+                <img class="p-2" src="/img/cib-redux.svg" alt="" />
+                <img class="p-2" src="/img/cib-mongodb.svg" alt="" />
+                <img class="p-2" src="/img/cib-node-js.svg" alt="" />
+              </div>
+            </div>
+          </div> -->
 
           <!-- End of projects -->
 
