@@ -44,11 +44,11 @@
       class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top navigation"
     >
       <div class="container">
-        <a class="navbar-brand" href="#"
-          ><img class="col-6 col-md-4 img-fluid" src="img/logobrand.png" alt=""
+        <a class="navbar-brand" href="index.html"
+          ><img class="header-logo" src="img/logobrand.png" alt=""
         /></a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler ml-auto"
           type="button"
           data-toggle="collapse"
           data-target="#navbarColor02"
@@ -60,12 +60,9 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarColor02">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-lg-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html"
-                >Home
-                <span class="sr-only">(current)</span>
-              </a>
+              <a class="nav-link" href="index.html">Home </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Services</a>
@@ -77,10 +74,8 @@
               <a class="nav-link" href="#">About</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >Blog
-                <span class="sr-only">(current)</span>
-              </a>
+              <a class="nav-link" href="blog.html">Blog </a>
+              <span class="sr-only">(current)</span>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
@@ -92,7 +87,7 @@
     <!-- End of navigation -->
 
     <!-- Jumbo Hero -->
-    <header class="jumbotron jumbo-hero jumbo-inner bg-dark md-bg-none">
+    <header class="jumbotron jumbo-hero bg-dark md-bg-none">
       <div
         class="
           container
@@ -104,7 +99,7 @@
         "
       >
         <div class="hero-text">
-          <h1 class="display-4 mt-5 text-white">
+          <h1 class="display-4 my-5 text-white text-center">
             Latest
             <span class="text-primary font-weight-bolder"
               ><strong>Stories</strong></span
@@ -112,17 +107,15 @@
           </h1>
         </div>
       </div>
-      <img
-        src="img/heroimg-border.png"
-        class="img-fluid img-hero d-none d-md-flex"
-        alt=""
-      />
+      <a href="#posts-section" class="arrow-down mt-5"
+        ><i class="fa fa-angle-double-down" aria-hidden="true"></i
+      ></a>
     </header>
 
     <!-- End of Jumbo hero -->
     <main class="container">
       <div class="row">
-        <article class="col-md-10 mx-auto">
+        <article class="col-md-10 mx-auto" id="posts-section">
           <!-- Posts -->
           <div class="col-12 my-5">
             <h1>Latest Stories</h1>
@@ -130,7 +123,7 @@
 
           <!-- Articles -->
           <!-- Single Article Box -->
-          <article class="col-md-12 col-lg-11">
+          <article class="col-md-12 col-lg-10 my-5">
             <div class="row row-content align-items-center my-3 my-md-5">
               <div class="col">
                 <div class="media">
@@ -175,7 +168,7 @@
           </article>
           <!-- End of Single Article box -->
           <!-- Single Article Box -->
-          <article class="col-md-12 col-lg-11">
+          <article class="col-md-12 col-lg-10 my-5">
             <div class="row row-content align-items-center my-3 my-md-5">
               <div class="col">
                 <div class="media">
@@ -306,7 +299,7 @@
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!-- Custom JS -->
-    <script src="js/app.js"></script>
+    <!-- <script src="js/app.js"></script> -->
     <!-- endbuild -->
   </body>
 </html>
