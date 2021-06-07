@@ -24,32 +24,32 @@ btnFront.addEventListener("click", function () {
   });
 });
 
-btnFull.addEventListener("click", function () {
-  filterBtns.forEach(function (node) {
-    node.classList.remove("active");
-  });
-  btnFull.classList.add("active");
+// btnFull.addEventListener("click", function () {
+//   filterBtns.forEach(function (node) {
+//     node.classList.remove("active");
+//   });
+//   btnFull.classList.add("active");
 
-  projectsAll.forEach(function (node) {
-    node.classList.remove("active-project");
-  });
-  projectsFull.forEach(function (node) {
-    node.classList.add("active-project");
-  });
-});
+//   projectsAll.forEach(function (node) {
+//     node.classList.remove("active-project");
+//   });
+//   projectsFull.forEach(function (node) {
+//     node.classList.add("active-project");
+//   });
+// });
 
-btnMobile.addEventListener("click", function () {
-  filterBtns.forEach(function (node) {
-    node.classList.remove("active");
-  });
-  btnMobile.classList.add("active");
-  projectsAll.forEach(function (node) {
-    node.classList.remove("active-project");
-  });
-  projectsMobile.forEach(function (node) {
-    node.classList.add("active-project");
-  });
-});
+// btnMobile.addEventListener("click", function () {
+//   filterBtns.forEach(function (node) {
+//     node.classList.remove("active");
+//   });
+//   btnMobile.classList.add("active");
+//   projectsAll.forEach(function (node) {
+//     node.classList.remove("active-project");
+//   });
+//   projectsMobile.forEach(function (node) {
+//     node.classList.add("active-project");
+//   });
+// });
 
 btnCms.addEventListener("click", function () {
   filterBtns.forEach(function (node) {
