@@ -232,10 +232,28 @@ p {
   height: 250px;
 }
 
+/* Contact */
+
+#contact {
+  height: 100vh;
+}
+
+.contact-icons a i {
+  font-size: 4rem;
+}
+
+.contact-icons a i:hover {
+  transform: scale(1.1);
+}
+
 /* Footer */
 
 .connect-icons a i {
   font-size: 2.5rem;
+}
+
+.connect-icons a i:hover {
+  transform: scale(1.1);
 }
 
 /* Post page */
