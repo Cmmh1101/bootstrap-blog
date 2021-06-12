@@ -1,12 +1,38 @@
+// Content container appears
+const content = document.querySelectorAll(".content-container");
+
+window.addEventListener("scroll", easeContent);
+
+function easeContent() {
+  const bottomOfPage = window.innerHeight * 0.8;
+
+  content.forEach(function (contents) {
+    const topOfContent = contents.getBoundingClientRect().top;
+    // ternary operators
+    // condition ? do this : do that
+    // topOfContent < bottomOfPage
+    //   ? contents.classList.add("appear")
+    //   : contents.classList.remove("appear");
+
+    if (topOfContent < bottomOfPage) {
+      contents.classList.add("appear");
+    } else {
+      contents.classList.remove("appear");
+    }
+  });
+}
+
+// Projects filter
+
 const projectsFront = document.querySelectorAll(".project_front");
-const projectsFull = document.querySelectorAll(".project_full");
-const projectsMobile = document.querySelectorAll(".project_mobile");
+// const projectsFull = document.querySelectorAll(".project_full");
+// const projectsMobile = document.querySelectorAll(".project_mobile");
 const projectsCms = document.querySelectorAll(".project_cms");
 const projectsAll = document.querySelectorAll(".project_box");
 
 const btnFront = document.querySelector("#btn-front");
-const btnFull = document.querySelector("#btn-full");
-const btnMobile = document.querySelector("#btn-mobile");
+// const btnFull = document.querySelector("#btn-full");
+// const btnMobile = document.querySelector("#btn-mobile");
 const btnCms = document.querySelector("#btn-cms");
 const btnAll = document.querySelector("#btn-all");
 const filterBtns = document.querySelectorAll(".filter-btns");
