@@ -22,6 +22,19 @@ function easeContent() {
   });
 }
 
+//  scroll down hide navbar - scroll up show navbar
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("nav").style = "top: 0; transition: 0.5s";
+  } else {
+    document.getElementById("nav").style = "top: -120px; transition: 0.5s";
+  }
+  prevScrollpos = currentScrollPos;
+};
+
 // Projects filter
 
 const projectsFront = document.querySelectorAll(".project_front");
