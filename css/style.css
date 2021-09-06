@@ -13,7 +13,7 @@ html {
   --light-blue: #b9faf7;
   --light-yellow: #f8e4ab;
   --light-gray: #b5b5b5;
-  --cta-blue: #6497f5;
+  --cta-blue: #2864d4;
   --cta-light: #a0bef5;
   --teal: #008080;
 }
@@ -149,6 +149,7 @@ p {
 
 .project_box {
   display: none;
+  height: 700px;
 }
 
 .active-project {
@@ -222,10 +223,30 @@ p {
   transform: scale(1.2);
 }
 
+.project_box .description {
+  height: 350px;
+}
+
+.project_box .projects-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.project_box a {
+  background-color: var(--cta-blue);
+  margin: 0 10px;
+}
+.project_box i {
+  color: whitesmoke;
+  font-size: 1.5rem;
+}
+
 .tech-icon {
   position: absolute;
-  bottom: 172px;
+  top: 0;
   right: 0;
+  background-color: var(--cta-blue);
 }
 
 .tech-icon img {
