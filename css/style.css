@@ -36,7 +36,7 @@ p {
 }
 
 .jumbo-hero h1 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .jumbo-hero p {
@@ -47,15 +47,18 @@ p {
 
 .jumbo-hero {
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   background: transparent;
   overflow: hidden;
   border-radius: 0;
 }
 
-.hero-container {
-  margin-top: 6rem;
-}
+/* .hero-container {
+  margin-top: 4rem;
+} */
 
 .jumbo-hero .img-hero {
   /* width: 250px; */
@@ -149,7 +152,7 @@ p {
 
 .project_box {
   display: none;
-  height: 700px;
+  height: 750px;
 }
 
 .active-project {
