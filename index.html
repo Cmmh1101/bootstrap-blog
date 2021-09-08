@@ -52,16 +52,21 @@
           class="navbar-toggler ml-auto"
           type="button"
           data-toggle="collapse"
-          data-target="#navbarColor02"
-          aria-controls="navbarColor02"
+          data-target="#navigation"
+          aria-controls="navigation"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarColor02">
-          <ul class="navbar-nav ml-lg-auto">
+        <div
+          class="collapse navbar-collapse"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+          id="navigation"
+        >
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
               <a class="nav-link" href="index.html">Home</a>
               <span class="sr-only">(current)</span>
@@ -78,7 +83,7 @@
             <li class="nav-item">
               <a
                 class="nav-link"
-                href="https://blog.carlamontano.tech"
+                href="https://blog.carlamontano.tech/"
                 target="_blank"
                 >Blog
               </a>
@@ -164,12 +169,12 @@
     </header>
 
     <!-- End of Jumbo hero -->
-    <main class="col-xl-10 mx-auto">
+    <main class="col-xl-10 mx-auto" id="projects">
       <div class="container">
         <div class="row d-flex justify-content-center my-5">
           <!-- Projects -->
 
-          <div class="col-12 mt-5 mb-3 content-container" id="projects">
+          <div class="col-12 mt-5 mb-3 content-container">
             <h1>Projects</h1>
           </div>
 
@@ -446,7 +451,7 @@
             </div>
             <!-- Projects cards -->
 
-            <div
+            <!-- <div
               class="
                 col-12 col-sm-10 col-md-8 col-lg-5
                 m-4
@@ -496,7 +501,7 @@
                   <img class="p-2" src="/img/cib-js.svg" alt="" />
                 </div>
               </div>
-            </div>
+            </div> -->
 
             <!-- Projects cards -->
 
@@ -595,11 +600,11 @@
 
           <!-- About -->
         </div>
-        <div class="row d-flex justify-content-center my-5">
+        <div class="row d-flex justify-content-center my-5" id="about">
           <!-- About Section -->
           <div class="col-xl-10 mx-auto">
             <div class="about-section content-container">
-              <h1 class="my-5 mb-3" id="about">About</h1>
+              <h1 class="my-5 mb-3">About</h1>
               <p class="my-3">
                 I'm a passionate self-taught Web Developer and Designer. My
                 proactive approach has resulted in numerous important wins in my
@@ -1187,13 +1192,22 @@
                       contact-icons
                     "
                   >
-                    <a class="nav-link m-2" href="#"
+                    <a
+                      class="nav-link m-2"
+                      href="https://github.com/cmmh1101"
+                      target="_blank"
                       ><i class="fa fa-github" aria-hidden="true"></i
                     ></a>
-                    <a class="nav-link m-2" href="#"
+                    <a
+                      class="nav-link m-2"
+                      href="https://www.linkedin.com/in/carla-montano"
+                      target="_blank"
                       ><i class="fa fa-linkedin-square" aria-hidden="true"></i
                     ></a>
-                    <a class="nav-link m-2" href="#"
+                    <a
+                      class="nav-link m-2"
+                      href="https://twitter.com/cmmh11"
+                      target="_blank"
                       ><i class="fa fa-twitter" aria-hidden="true"></i
                     ></a>
                   </div>
@@ -1225,8 +1239,13 @@
           </div>
           <div class="col-sm-6 col-md-4 d-flex justify-content-center">
             <nav class="nav flex-column">
-              <a class="nav-link" href="contact.html">Contact</a>
-              <a class="nav-link" href="blog.carlamontano.tech">Blog</a>
+              <a class="nav-link" href="#contact-me">Contact</a>
+              <a
+                class="nav-link"
+                href="https://blog.carlamontano.tech/"
+                target="_blank"
+                >Blog</a
+              >
             </nav>
           </div>
           <div class="col-md-4 text-center">
@@ -1239,15 +1258,22 @@
                 connect-icons
               "
             >
-              <a class="nav-link m-2" href="https://github.com/cmmh1101"
+              <a
+                class="nav-link m-2"
+                href="https://github.com/cmmh1101"
+                target="_blank"
                 ><i class="fa fa-github" aria-hidden="true"></i
               ></a>
               <a
                 class="nav-link m-2"
                 href="https://www.linkedin.com/in/carla-montano"
+                target="_blank"
                 ><i class="fa fa-linkedin-square" aria-hidden="true"></i
               ></a>
-              <a class="nav-link m-2" href="https://twitter.com/cmmh11"
+              <a
+                class="nav-link m-2"
+                href="https://twitter.com/cmmh11"
+                target="_blank"
                 ><i class="fa fa-twitter" aria-hidden="true"></i
               ></a>
             </div>
